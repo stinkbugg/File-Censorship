@@ -15,14 +15,10 @@ vector<string> makeVector (){
 
    vector<string> v;
    vector<string> words;
-
    string line;
-
-//   cout << "in makeVector()" << endl;
 
    while(getline(cin, line)){
       v.push_back (line);
-  //    cout << line <<  endl;
    }
    return v;
 }
