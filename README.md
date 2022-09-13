@@ -10,7 +10,7 @@ The arguments follow this order:
  * if no files are given, read from standard input. It will appear the program has stopped, but rather it is waiting to read from the keyboard. When you are done typing the input for the program, control-D indicates end of file from the keyboard.
  * sample argument after cmake . && make \
  ./hw3 Violets foo short - poem \
- This would censor foo, short and Violets from the file poem\
+ This would censor foo, short and Violets from the file poem
  
 * if poem was-\
 Roses are red\
