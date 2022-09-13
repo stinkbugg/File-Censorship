@@ -8,7 +8,6 @@
 #include <bits/stdc++.h>
 #include <cassert>
 
-
 using namespace std;
 
 //Build a vector of strings so each vector[] contains a WHOLE string line from the text file
@@ -41,21 +40,14 @@ string builder (string& edit, string word){
      }
 
      else if(index != edit.length()){
-        index = edit.find(word, index + 1);
-         
+        index = edit.find(word, index + 1);  
      }
    }
-
-
 return edit;
 }
 
-
 vector<string> editString(vector<string>& toEdit, vector<string>& wordCen){
-
 //goes through each line in the vector and each line is sorted
-
-  // cout << "in editString() and toEdit.size() = "<< toEdit.size() << endl;
    for(string i : wordCen){
      for(size_t j = 0; j < toEdit.size(); j++){
        
@@ -91,11 +83,9 @@ vector<string> fileReader(vector<string>& fileName){
   return fileContent;
 }
 
-
 vector<string> argSort(vector<string>& in){
   vector<string> args;
 
-  //watch for possible bug here
   for(size_t i = 0; i < in.size();i++){
     if(!(in[i] == "-")){
       args.push_back(in[i]);
@@ -103,11 +93,8 @@ vector<string> argSort(vector<string>& in){
     else{
       break;
     }
-
   }
-
   return args;
-
 }
 
 vector<string> fileSort(vector<string>& in){
@@ -122,14 +109,12 @@ vector<string> fileSort(vector<string>& in){
       index = i;
       isFound = true;
     }
-    
   }
 
   if(!isFound){
       cerr<<"hw3 ERROR invalid argument syntax\n";
       exit(1);
     }
-
 
    //sorts through array after found index and gets the file name/path 
   for(size_t j = index; j < in.size(); j ++){
@@ -140,7 +125,6 @@ vector<string> fileSort(vector<string>& in){
     }
   }
   return file;    
-
 }
 
 void argAlpha(vector<string>& in){
@@ -152,16 +136,12 @@ void argAlpha(vector<string>& in){
       }
     }
   }
-
-
 }
 
 
 bool duplicate(vector<string>& in){
- 
   sort(in.begin(), in.end());
   
-
   if(in.size() == 2){
     if(in[0] == in[1]){
       cerr<<"hw3 ERROR: duplicate arguments : "<< in[0]<<"\n";
@@ -179,15 +159,10 @@ bool duplicate(vector<string>& in){
   return false;
 }
 
-
-
-
 void printVector(vector<string> vector){
-
     for(string i: vector){
       cout << i << "\n";
     }
-
 }
 
 int main(int argc, char *argv[] ) {
