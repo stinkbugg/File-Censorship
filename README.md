@@ -17,10 +17,10 @@ Roses are red\
 Violets are 177777\
 This poem is too short
 
-* after the command poem would be-
-Roses are red
-CENSORED are 177777
-This poem is too CENSORED
+* after the command poem would be-\
+Roses are red\
+CENSORED are 177777\
+This poem is too CENSORED\
  
  #Words
  This program only replaces a complete word. A word is defined as a sequence of letters, a...zA...Z bordered by non-letters or the start/end of a new line.
